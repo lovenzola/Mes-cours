@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine 
 engine= create_engine('postgresql+psycopg2://user:12345678@localhost:5433/Projet_cartes')
 
 import psycopg2
@@ -28,3 +28,4 @@ else:
         print(table[0])
 cur.close()
 conn.close()
+

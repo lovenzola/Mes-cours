@@ -496,4 +496,3 @@ for col in insp.get_columns('paiement', schema='Conception_carte'):
     print(col['name'],":",col['type']) # Renvoie le nom et son type
 
 print(insp.get_pk_constraint('paiement', schema='Conception_carte'))
-

@@ -92,16 +92,16 @@ class reglement(QDialog):
         ope= jeu()
         ope.exec()
         if ope.resultat == "valide":
-            self.message.setText(f" {ope.repondre} : Reponse validee")
+            self.message.setText(f" ✅ {ope.repondre} : Reponse validee")
             self.message.setStyleSheet("border: 1px solid; border-radius: 3px;color: green;")
             self.bouton.setText("Continuer")
         elif ope.resultat == "non_valide":
-            self.message.setText(f"{ope.repondre} : Reponse non validee")
+            self.message.setText(f" ❌ {ope.repondre} : Reponse non validee")
             self.message.setStyleSheet("border: 1px solid; border-radius: 3px;color: blue;")
             self.bouton.setText("Reessayer")
         elif  ope.resultat == "timeout":
             
-            self.message.setText("Delai depassé")
+            self.message.setText(" ☠️ Delai depassé")
             self.message.setStyleSheet("border: 1px solid; border-radius: 3px;color: red;")
             self.bouton.setText("Reessayer")
 
